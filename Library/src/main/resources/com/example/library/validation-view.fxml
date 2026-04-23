@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<VBox spacing="15" alignment="CENTER"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.library.ValidationController"
+      style="-fx-padding: 20;">
+
+    <Label text="Book Validation"
+           style="-fx-font-size: 18px; -fx-font-weight: bold;" />
+
+    <TableView fx:id="tableView" prefWidth="600" editable="true">
+
+        <columns>
+            <TableColumn text="Book ID" fx:id="colId"/>
+            <TableColumn text="Title" fx:id="colTitle"/>
+            <TableColumn text="ISBN" fx:id="colISBN"/>
+            <TableColumn text="Copies" fx:id="colCopies"/>
+            <TableColumn text="Available" fx:id="colAvailable"/>
+            <TableColumn text="Price" fx:id="colPrice"/>
+            <TableColumn text="Status" fx:id="colStatus"/>
+        </columns>
+
+    </TableView>
+    <HBox spacing="15" alignment="CENTER">
+        <Button text="Report" onAction="#openReport"/>
+        <Button text="Average" onAction="#openAverage"/>
+        <Button text="Search" onAction="#openSearch"/>
+    </HBox>
+
+</VBox>

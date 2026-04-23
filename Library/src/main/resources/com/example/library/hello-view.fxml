@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<VBox spacing="20" alignment="CENTER"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.library.HelloController"
+      style="-fx-padding: 30;">
+
+    <Label text="Import CSV Files"
+           style="-fx-font-size: 18px; -fx-font-weight: bold;" />
+
+    <!-- Books -->
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Import Books CSV" onAction="#onImportBooks"/>
+        <TextField fx:id="booksField" promptText="No file selected" prefWidth="250"/>
+    </HBox>
+
+    <!-- Students -->
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Import Students CSV" onAction="#onImportStudents"/>
+        <TextField fx:id="studentsField" promptText="No file selected" prefWidth="250"/>
+    </HBox>
+
+    <!-- Transactions -->
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Import Transactions CSV" onAction="#onImportTransactions"/>
+        <TextField fx:id="transactionsField" promptText="No file selected" prefWidth="250"/>
+    </HBox>
+
+    <!-- Proceed -->
+    <Button text="Proceed" onAction="#onProceed"/>
+
+</VBox>
