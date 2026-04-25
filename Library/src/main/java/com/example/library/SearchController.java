@@ -20,29 +20,28 @@ public class SearchController {
         this.books = books;
     }
 
+
     @FXML
     private void onSearch() {
         String input = searchField.getText().trim().toLowerCase();
         ObservableList<String> results = FXCollections.observableArrayList();
 
-        boolean wildcard = input.endsWith("*");
-        String query = wildcard ? input.substring(0, input.length() - 1) : input;
+        if (input.isEmpty()) {
+            listView.setItems(results);
+            return;
+        }
 
         for (Book b : books) {
             String title = b.getTitle().toLowerCase();
 
-            boolean match;
-            if (wildcard) {
-                match = title.startsWith(query);
-            } else {
-                match = title.equals(query);
-            }
-
-            if (match) {
+            if (title.contains(input)) {
                 results.add(
-                        "Title: " + b.getTitle() +
-                                " | Book ID: " + b.getId() +
-                                " | Available: " + b.getAvailable()
+                        "Book ID: " + b.getId() +
+                                " | Title: " + b.getTitle() +
+                                " | ISBN: " + b.getIsbn() +
+                                " | Copies: " + b.getCopies() +
+                                " | Available: " + b.getAvailable() +
+                                " | Price: " + b.getPrice()
                 );
             }
         }

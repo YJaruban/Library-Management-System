@@ -1,1 +1,11 @@
-Title: The Maiden | Book ID: AA97 | Available: 1
+Book ID: AA01 | Title: The Great Gatsby | ISBN: 9780130000000 | Copies: 2 | Available: 1 | Price: 28.0
+Book ID: AA03 | Title: Ulysses | ISBN: 9780600000000 | Copies: 2 | Available: 2 | Price: 28.5
+Book ID: AA10 | Title: The Odyssey | ISBN: 9780140000000 | Copies: 2 | Available: 2 | Price: 45.0
+Book ID: AA16 | Title: Moby Dick | ISBN: 9781590000000 | Copies: 2 | Available: 2 | Price: 19.5
+Book ID: AA19 | Title: Jane Eyre | ISBN: 9798700000000 | Copies: 1 | Available: 1 | Price: 21.5
+Book ID: AA52 | Title: The Line of Beauty | ISBN: 9781590000000 | Copies: 2 | Available: 2 | Price: 45.0
+Book ID: AA76 | Title: Start With Why | ISBN: 9781120000000 | Copies: 2 | Available: 2 | Price: 24.0
+Book ID: AA85 | Title: Daring Greatly | ISBN: 9780600000000 | Copies: 2 | Available: 2 | Price: 28.0
+Book ID: AA88 | Title: Eat Pray Love | ISBN: 9781490000000 | Copies: 2 | Available: 2 | Price: 19.5
+Book ID: AA95 | Title: Adultery | ISBN: 9781490000000 | Copies: 1 | Available: 1 | Price: 22.5
+Book ID: AA96 | Title: Harry Potter 1 | ISBN: 9780260000000 | Copies: 1 | Available: 1 | Price: 38.0

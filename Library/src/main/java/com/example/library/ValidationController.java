@@ -33,10 +33,27 @@ public class ValidationController {
 
     private List<String[]> students;
     private List<String[]> transactions;
+    private List<Student> studentObjects = new ArrayList<>();
+    private List<Transaction> transactionObjects = new ArrayList<>();
 
     public void loadData(List<String[]> rawBooks, List<String[]> rawStudents, List<String[]> rawTransactions) {
         this.students = rawStudents;
         this.transactions = rawTransactions;
+
+        studentObjects.clear();
+        transactionObjects.clear();
+
+        for (String[] s : rawStudents) {
+            if (s.length >= 2) {
+                studentObjects.add(new Student(s[0], s[1]));
+            }
+        }
+
+        for (String[] t : rawTransactions) {
+            if (t.length >= 4) {
+                transactionObjects.add(new Transaction(t[0], t[1], t[2], t[3]));
+            }
+        }
 
         ObservableList<Book> list = FXCollections.observableArrayList();
 
@@ -217,6 +234,33 @@ public class ValidationController {
         Stage stage = new Stage();
         stage.setTitle("Book Availability");
         stage.setScene(new Scene(root, 600, 400));
+        stage.show();
+    }
+    @FXML
+    private void openStudentsView() throws Exception {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("student-view.fxml"));
+        Parent root = loader.load();
+
+        StudentViewController controller = loader.getController();
+        controller.setStudents(studentObjects);
+
+        Stage stage = new Stage();
+        stage.setTitle("Student Details");
+        stage.setScene(new Scene(root, 550, 400));
+        stage.show();
+    }
+
+    @FXML
+    private void openTransactionsView() throws Exception {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("transaction-view.fxml"));
+        Parent root = loader.load();
+
+        TransactionViewController controller = loader.getController();
+        controller.setTransactions(transactionObjects);
+
+        Stage stage = new Stage();
+        stage.setTitle("Transaction Details");
+        stage.setScene(new Scene(root, 750, 400));
         stage.show();
     }
 }

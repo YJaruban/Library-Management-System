@@ -31,6 +31,8 @@
         <Button text="Report" onAction="#openReport"/>
         <Button text="Average" onAction="#openAverage"/>
         <Button text="Search" onAction="#openSearch"/>
+        <Button text="View Students" onAction="#openStudentsView"/>
+        <Button text="View Transactions" onAction="#openTransactionsView"/>
     </HBox>
 
 </VBox>
