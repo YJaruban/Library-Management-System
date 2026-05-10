@@ -61,7 +61,7 @@ public class HelloController {
     @FXML
     protected void onProceed() {
         if (booksFile == null || studentsFile == null || transactionsFile == null) {
-            showAlert("Please select all three CSV files.");
+            showAlert("Please import books, students and transactions CSV files.");
             return;
         }
 
