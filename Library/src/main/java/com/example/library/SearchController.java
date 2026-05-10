@@ -27,8 +27,7 @@ public class SearchController {
         ObservableList<String> results = FXCollections.observableArrayList();
 
         if (input.isEmpty()) {
-            listView.setItems(results);
-            return;
+            results.add("No matching books found.");
         }
 
         for (Book b : books) {
