@@ -161,7 +161,7 @@ public class ValidationController {
         int checkDigit = (10 - (sum % 10)) % 10;
         return checkDigit == Character.getNumericValue(isbn.charAt(12));
     }
-
+    //validates ISBN-13 using check digit algorithm
     private void validateBook(Book book) {
         boolean valid =
                 validBookId(book.getId()) &&
