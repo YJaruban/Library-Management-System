@@ -1,11 +1,35 @@
-Book ID: AA01 | Title: The Great Gatsby | ISBN: 9780130000000 | Copies: 2 | Available: 1 | Price: 28.0
-Book ID: AA03 | Title: Ulysses | ISBN: 9780600000000 | Copies: 2 | Available: 2 | Price: 28.5
+Book ID: DD25 | Title: The Maid | ISBN: 9781860000000 | Copies: 1 | Available: 1 | Price: 27.5
+Book ID: AA05 | Title: Brave New World | ISBN: 9780260000000 | Copies: 1 | Available: 1 | Price: 42.0
+Book ID: AA08 | Title: War and Peace | ISBN: 9780600000000 | Copies: 2 | Available: 2 | Price: 39.5
 Book ID: AA10 | Title: The Odyssey | ISBN: 9780140000000 | Copies: 2 | Available: 2 | Price: 45.0
+Book ID: AA13 | Title: The Iliad | ISBN: 9781490000000 | Copies: 1 | Available: 1 | Price: 24.0
+Book ID: AA14 | Title: Beloved | ISBN: 9780130000000 | Copies: 2 | Available: 2 | Price: 36.5
 Book ID: AA16 | Title: Moby Dick | ISBN: 9781590000000 | Copies: 2 | Available: 2 | Price: 19.5
-Book ID: AA19 | Title: Jane Eyre | ISBN: 9798700000000 | Copies: 1 | Available: 1 | Price: 21.5
-Book ID: AA52 | Title: The Line of Beauty | ISBN: 9781590000000 | Copies: 2 | Available: 2 | Price: 45.0
-Book ID: AA76 | Title: Start With Why | ISBN: 9781120000000 | Copies: 2 | Available: 2 | Price: 24.0
+Book ID: AA18 | Title: The Road | ISBN: 9781480000000 | Copies: 2 | Available: 2 | Price: 32.0
+Book ID: AA20 | Title: Middlemarch | ISBN: 9780130000000 | Copies: 2 | Available: 2 | Price: 22.0
+Book ID: AA23 | Title: Dracula | ISBN: 9780130000000 | Copies: 2 | Available: 2 | Price: 32.5
+Book ID: AA27 | Title: Heart of Darkness | ISBN: 9780130000000 | Copies: 1 | Available: 1 | Price: 35.0
+Book ID: AA29 | Title: Dune | ISBN: 9798800000000 | Copies: 1 | Available: 1 | Price: 39.5
+Book ID: AA31 | Title: The Tin Drum | ISBN: 9780320000000 | Copies: 1 | Available: 1 | Price: 45.0
+Book ID: AA32 | Title: Oedipus Rex | ISBN: 9780320000000 | Copies: 1 | Available: 1 | Price: 22.5
+Book ID: AA33 | Title: Waiting for Godot | ISBN: 9780130000000 | Copies: 1 | Available: 1 | Price: 38.0
+Book ID: AA34 | Title: Dubliners | ISBN: 9781490000000 | Copies: 1 | Available: 1 | Price: 24.0
+Book ID: AA35 | Title: Aeneid | ISBN: 9781450000000 | Copies: 1 | Available: 1 | Price: 36.5
+Book ID: AA36 | Title: Paradise Lost | ISBN: 9780600000000 | Copies: 2 | Available: 2 | Price: 31.0
+Book ID: AA37 | Title: The Golden Notebook | ISBN: 9781490000000 | Copies: 1 | Available: 1 | Price: 19.5
+Book ID: AA41 | Title: Cloud Atlas | ISBN: 9780600000000 | Copies: 1 | Available: 1 | Price: 22.0
+Book ID: AA45 | Title: The Blind Assassin | ISBN: 9780320000000 | Copies: 1 | Available: 1 | Price: 28.5
+Book ID: AA47 | Title: Middlesex | ISBN: 9780260000000 | Copies: 2 | Available: 2 | Price: 42.0
+Book ID: AA49 | Title: Small Island | ISBN: 9791190000000 | Copies: 2 | Available: 2 | Price: 21.0
+Book ID: AA51 | Title: The Sense of Ending | ISBN: 9781490000000 | Copies: 2 | Available: 2 | Price: 26.0
+Book ID: AA53 | Title: Vernon God Little | ISBN: 9780130000000 | Copies: 2 | Available: 2 | Price: 22.5
+Book ID: AA66 | Title: Beautiful World | ISBN: 9780130000000 | Copies: 1 | Available: 1 | Price: 28.5
+Book ID: AA67 | Title: Educated | ISBN: 9780740000000 | Copies: 1 | Available: 1 | Price: 19.5
+Book ID: AA70 | Title: Homo Deus | ISBN: 9780130000000 | Copies: 1 | Available: 1 | Price: 21.0
+Book ID: AA73 | Title: Deep Work | ISBN: 9791190000000 | Copies: 1 | Available: 1 | Price: 45.0
+Book ID: AA74 | Title: Digital Minimalism | ISBN: 9780260000000 | Copies: 2 | Available: 2 | Price: 22.5
+Book ID: AA77 | Title: Leaders Eat Last | ISBN: 9780140000000 | Copies: 1 | Available: 1 | Price: 36.5
 Book ID: AA85 | Title: Daring Greatly | ISBN: 9780600000000 | Copies: 2 | Available: 2 | Price: 28.0
-Book ID: AA88 | Title: Eat Pray Love | ISBN: 9781490000000 | Copies: 2 | Available: 2 | Price: 19.5
+Book ID: AA92 | Title: Veronika Decides | ISBN: 9781450000000 | Copies: 2 | Available: 2 | Price: 39.5
 Book ID: AA95 | Title: Adultery | ISBN: 9781490000000 | Copies: 1 | Available: 1 | Price: 22.5
-Book ID: AA96 | Title: Harry Potter 1 | ISBN: 9780260000000 | Copies: 1 | Available: 1 | Price: 38.0
+Book ID: AA97 | Title: The Maiden | ISBN: 9781120000000 | Copies: 1 | Available: 1 | Price: 24.0

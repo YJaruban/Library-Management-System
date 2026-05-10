@@ -45,6 +45,9 @@ public class SearchController {
                 );
             }
         }
+        if (results.isEmpty()) {
+            results.add("No matching books found.");
+        }
 
         listView.setItems(results);
     }

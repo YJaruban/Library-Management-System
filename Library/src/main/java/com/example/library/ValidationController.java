@@ -187,7 +187,7 @@ public class ValidationController {
                 if (empty || book == null) {
                     setStyle("");
                 } else if ("Invalid".equals(book.getStatus())) {
-                    setStyle("-fx-background-color: #ffcccc;");
+                    setStyle("-fx-background-color: #ffcccccc;");
                 } else {
                     setStyle("");
                 }
