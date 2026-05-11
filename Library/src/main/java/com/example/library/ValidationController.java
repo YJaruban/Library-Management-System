@@ -1,5 +1,6 @@
 package com.example.library;
 
+import java.io.FileWriter;
 import javafx.beans.property.SimpleDoubleProperty;
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
@@ -40,9 +41,11 @@ public class ValidationController {
         this.students = rawStudents;
         this.transactions = rawTransactions;
 
+        //removes  previous records before reloading
         studentObjects.clear();
         transactionObjects.clear();
 
+        //converts csv to objects
         for (String[] s : rawStudents) {
             if (s.length >= 2) {
                 studentObjects.add(new Student(s[0], s[1]));
@@ -71,11 +74,14 @@ public class ValidationController {
                 validateBook(book);
                 list.add(book);
 
+            //handles invalid CSV rows
             } catch (Exception e) {
                 list.add(new Book("ERROR", "Invalid Row", "-", 0, 0, 0.0, "Invalid"));
             }
         }
 
+
+        //links table column with the datas
         colId.setCellValueFactory(data -> new SimpleStringProperty(data.getValue().getId()));
         colTitle.setCellValueFactory(data -> new SimpleStringProperty(data.getValue().getTitle()));
         colISBN.setCellValueFactory(data -> new SimpleStringProperty(data.getValue().getIsbn()));
@@ -98,6 +104,7 @@ public class ValidationController {
             book.setId(event.getNewValue());
             validateBook(book);
             tableView.refresh();
+            saveEditedData();
         });
 
         colTitle.setOnEditCommit(event -> {
@@ -105,6 +112,7 @@ public class ValidationController {
             book.setTitle(event.getNewValue());
             validateBook(book);
             tableView.refresh();
+            saveEditedData();
         });
 
         colISBN.setOnEditCommit(event -> {
@@ -112,6 +120,7 @@ public class ValidationController {
             book.setIsbn(event.getNewValue());
             validateBook(book);
             tableView.refresh();
+            saveEditedData();
         });
 
         colCopies.setOnEditCommit(event -> {
@@ -119,6 +128,7 @@ public class ValidationController {
             book.setCopies(event.getNewValue());
             validateBook(book);
             tableView.refresh();
+            saveEditedData();
         });
 
         colAvailable.setOnEditCommit(event -> {
@@ -126,6 +136,7 @@ public class ValidationController {
             book.setAvailable(event.getNewValue());
             validateBook(book);
             tableView.refresh();
+            saveEditedData();
         });
 
         colPrice.setOnEditCommit(event -> {
@@ -133,6 +144,7 @@ public class ValidationController {
             book.setPrice(event.getNewValue());
             validateBook(book);
             tableView.refresh();
+            saveEditedData();
         });
 
         tableView.setItems(list);
@@ -175,6 +187,30 @@ public class ValidationController {
             book.setStatus("Valid");
         } else {
             book.setStatus("Invalid");
+        }
+    }
+
+    private void saveEditedData() {
+
+        try (FileWriter writer = new FileWriter("edited_books.txt")) {
+
+            for (Book b : tableView.getItems()) {
+
+                writer.write(
+                        b.getId() + "," +
+                                b.getTitle() + "," +
+                                b.getIsbn() + "," +
+                                b.getCopies() + "," +
+                                b.getAvailable() + "," +
+                                b.getPrice() + "," +
+                                b.getStatus()
+                );
+
+                writer.write(System.lineSeparator());
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 
